@@ -87,34 +87,35 @@ export default function Home() {
 
       {/* Achievements Section */}
       <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Notable Achievements</h2>
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Notable Achievements</h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ul className="space-y-6 text-gray-800 text-lg">
-              <li className="flex items-start">
-                <span className="mr-2 text-xl">•</span>
-                First Egyptian company to design a floating system...
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 text-xl">•</span>
-                Innovative design of a system capable of...
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 text-xl">•</span>
-                Execution of multiple projects...
-              </li>
-            </ul>
-            <Image
-              src="/assets/Acheivment.png"
-              alt="Achievements"
-              width={600}
-              height={400}
-              className="w-full rounded-xl transform transition duration-300 hover:scale-105"
-            />
-          </div>
-        </div>
-      </section>
+    <div className="grid md:grid-cols-2 gap-12 items-center md:flex md:flex-row-reverse">
+      <ul className="space-y-6 text-gray-800 text-lg">
+        <li className="flex items-start">
+          <span className="mr-2 text-xl">•</span>
+          First Egyptian company to design a floating system...
+        </li>
+        <li className="flex items-start">
+          <span className="mr-2 text-xl">•</span>
+          Innovative design of a system capable of...
+        </li>
+        <li className="flex items-start">
+          <span className="mr-2 text-xl">•</span>
+          Execution of multiple projects...
+        </li>
+      </ul>
+      <Image
+        src="/assets/Acheivment.png"
+        alt="Achievements"
+        width={600}
+        height={400}
+        className="w-full rounded-xl transform transition duration-300 hover:scale-105"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose Us */}
       <section className="max-w-7xl mx-auto px-6 py-20">
