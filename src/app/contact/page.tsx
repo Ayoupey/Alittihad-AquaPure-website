@@ -9,37 +9,30 @@ export default function Contact() {
     email: '',
     message: ''
   });
-  
-  const [submitStatus, setSubmitStatus]: [null | 'success', React.Dispatch<React.SetStateAction<null | 'success'>>] = useState(null);
 
+  const [sent, setSent] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  const { name, value } = e.target;
-  setFormData(prev => ({
-    ...prev,
-    [name]: value,
-  }));
-};
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  setSubmitStatus('success');
-  setFormData({ name: '', email: '', message: '' });
-  setTimeout(() => setSubmitStatus(null), 3000);
-};
+    e.preventDefault();
+    setSent(true);
+    setFormData({ name: '', email: '', message: '' });
+    setTimeout(() => setSent(false), 3000);
+  };
 
   return (
     <>
       <Header />
       <main className="max-w-2xl mx-auto p-6 fade-in">
         <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
-        
-        {submitStatus === 'success' && (
-          <div className="bg-green-100 text-green-700 p-4 mb-6 rounded">
-            Thank you for your message! We will get back to you soon.
-          </div>
-        )}
-        
+
         <form className="space-y-6" onSubmit={handleSubmit}>
           <input 
             type="text" 
@@ -61,19 +54,26 @@ export default function Contact() {
           />
           <textarea 
             placeholder="Message" 
-            rows="5" 
+            rows={5}
             name="message"
             value={formData.message}
             onChange={handleChange}
             className="w-full border border-gray-300 p-3 rounded"
             required
           ></textarea>
+          
           <button 
             type="submit" 
             className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition w-full"
           >
             Send
           </button>
+
+          {sent && (
+            <p className="text-green-600 text-center mt-4">
+              ✅ Thank you! Your message was sent successfully.
+            </p>
+          )}
         </form>
       </main>
       <Footer />
