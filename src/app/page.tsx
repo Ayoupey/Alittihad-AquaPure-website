@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -174,7 +175,8 @@ export default function Home() {
         </div>
       </section>
 
-            <Footer />
+      {/* 👇 Footer مكانه الصحيح */}
+      <Footer />
     </>
   );
 }

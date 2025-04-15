@@ -1,44 +1,29 @@
-import Image from 'next/image';
+"use client";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white py-8 border-t">
-      <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 fade-in">
+    <footer className="bg-gray-100 text-gray-800 mt-16">
+      <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-8">
+        
+        {/* Logo + Company Name */}
         <div className="flex items-center gap-4">
-          <span className="text-xl">📞</span>
-          <div>
-            <p>+20-103-016-1864</p>
-            <p>+20-110-105-2354</p>
-            <p>03-4807666</p>
-          </div>
+          <Image
+            src="/assets/logo.png"
+            alt="Logo"
+            width={50}
+            height={50}
+            className="h-12 w-auto"
+          />
+          <span className="text-xl font-bold text-blue-600">ALITTIHAD-AQUAPURE</span>
         </div>
-        
-        <div className="flex justify-center">
-          <div className="flex items-center gap-4">
-            <Image src="/assets/logo.png" alt="ALITTIHAD Logo" width={64} height={64} className="h-16" />
-            <div>
-              <h3 className="text-lg font-semibold">ALITTIHAD-AQUAPURE</h3>
-              <div className="flex text-xs text-brand-blue gap-4">
-                <span>SAFE</span>
-                <span>QUICK</span>
-                <span>ACCURATE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="space-y-2">
-          <div className="flex items-start gap-4">
-            <span className="text-xl mt-1">📍</span>
-            <div>
-              <p>• El-Rami Station, Alexandria, Egypt</p>
-              <p>• 20 Ahmed ElShatoury Street, Doki, Egypt</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="text-xl">📧</span>
-            <p>Almotaheda.Electromechanic@gmail.com</p>
-          </div>
+
+        {/* Contact Info */}
+        <div className="space-y-2 text-sm md:text-base">
+          <p><strong>📍 Address:</strong> 123 Water Treatment Street, Cairo, Egypt</p>
+          <p><strong>📞 Phone:</strong> +20-110-105-2354</p>
+          <p><strong>☎️ Landline:</strong> 03-4807666</p>
+          <p><strong>✉️ Email:</strong> info@alittihadaquapure.com</p>
         </div>
       </div>
     </footer>
