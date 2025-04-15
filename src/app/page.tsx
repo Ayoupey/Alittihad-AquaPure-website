@@ -85,7 +85,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-{/* Services Section */}
+{/* Acheivments section */}
       <section className="bg-gray-50 py-20 px-6">
   <div className="max-w-7xl mx-auto">
     <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Notable Achievements</h2>
@@ -111,7 +111,6 @@ export default function Home() {
         width={600}
         height={400}
         className="w-full rounded-xl transform transition duration-300 hover:scale-105"
-      />
     </div>
   </div>
 </section>
