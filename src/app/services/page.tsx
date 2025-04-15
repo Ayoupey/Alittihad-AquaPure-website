@@ -9,7 +9,7 @@ export default function Services() {
       <Header />
       <main>
         {/* Services Overview */}
-        <section className="max-w-7xl mx-auto px-4 py-12 fade-in">
+        <section className="max-w-7xl mx-auto px-4 py-12 pt-32 fade-in">
           <h1 className="text-3xl font-bold mb-12">Our Services</h1>
           
           {/* Main Services List */}
