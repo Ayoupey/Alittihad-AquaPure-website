@@ -12,22 +12,20 @@ export default function Contact() {
   
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const { name, value } = e.target;
+  setFormData(prev => ({
+    ...prev,
+    [name]: value,
+  }));
+};
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the data to your backend or a service like Formspree
-    // For now, we'll just show a success message
-    setSubmitStatus('success');
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setSubmitStatus(null), 3000);
-  };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setSubmitStatus('success');
+  setFormData({ name: '', email: '', message: '' });
+  setTimeout(() => setSubmitStatus(null), 3000);
+};
 
   return (
     <>
