@@ -86,32 +86,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Achievements Section */}
       <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <ul className="space-y-6 text-gray-800 text-lg">
-            <li className="flex items-start">
-              <span className="mr-2 text-xl">•</span>
-              First Egyptian company to design a floating system for submersible
-              pumps operating in oil removal basins in iron & steel factories.
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-xl">•</span>
-              Innovative design of a system capable of supporting up to 40 kg on
-              water surface.
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-xl">•</span>
-              Execution of multiple projects with high-quality standards and record
-              completion times.
-            </li>
-          </ul>
-          <Image
-            src="/assets/Acheivment.png"
-            alt="Achievements"
-            width={600}
-            height={400}
-            className="w-full rounded-xl transform transition duration-300 hover:scale-105"
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Notable Achievements</h2>
+
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <ul className="space-y-6 text-gray-800 text-lg">
+        <li className="flex items-start">
+          <span className="mr-2 text-xl">•</span>
+          First Egyptian company to design a floating system...
+        </li>
+        <li className="flex items-start">
+          <span className="mr-2 text-xl">•</span>
+          Innovative design of a system capable of...
+        </li>
+        <li className="flex items-start">
+          <span className="mr-2 text-xl">•</span>
+          Execution of multiple projects...
+        </li>
+      </ul>
+      <Image
+        src="/assets/Acheivment.png"
+        alt="Achievements"
+        width={600}
+        height={400}
+        className="w-full rounded-xl transform transition duration-300 hover:scale-105"
+      />
+    </div>
+  </div>
+</section>
+
           />
         </div>
       </section>

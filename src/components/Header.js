@@ -1,26 +1,41 @@
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="bg-white shadow sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between fade-in">
-        <div className="flex items-center space-x-4">
-          <Image src="/assets/logo.png" alt="Logo" width={64} height={64} className="h-16 w-auto transform transition duration-300 hover:scale-150" />
-          <span className="font-bold text-xl transform transition duration-300 hover:scale-105">ALITTIHAD-AQUAPURE</span>
-        </div>
-        <nav className="space-x-6 text-sm  ">
-          <Link href="/" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-105 ">
-            Home
-          </Link>
-          <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-105">
-            Our Services
-          </Link>
-          <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-105">
-            Contact Us
-          </Link>
+    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <Link href="/" className="text-xl font-bold text-blue-600">
+          ALITTIHAD-AQUAPURE
+        </Link>
+
+        {/* Hamburger Button */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
+          <Link href="/">Home</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <nav className="md:hidden px-6 pb-4 flex flex-col gap-4 bg-white text-gray-800 font-medium">
+          <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        </nav>
+      )}
     </header>
   );
 }
