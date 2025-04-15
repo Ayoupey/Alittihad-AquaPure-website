@@ -9,7 +9,6 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        
         {/* Logo + Brand Name */}
         <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
           <Image
@@ -40,5 +39,14 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden px-6 pb-4 flex flex-col gap-4 bg
+        <nav className="md:hidden px-6 pb-4 flex flex-col gap-4 bg-white text-gray-800 font-medium">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-colors duration-300">Home</Link>
+          <Link href="/services" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-colors duration-300">Services</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-colors duration-300">Contact</Link>
+        </nav>
+      )}
+    </header>
+  );
+}
+
 
