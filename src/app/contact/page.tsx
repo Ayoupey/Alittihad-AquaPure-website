@@ -10,7 +10,8 @@ export default function Contact() {
     message: ''
   });
   
-  const [submitStatus, setSubmitStatus] = useState<null | 'success'>(null);
+  const [submitStatus, setSubmitStatus]: [null | 'success', React.Dispatch<React.SetStateAction<null | 'success'>>] = useState(null);
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
   const { name, value } = e.target;
