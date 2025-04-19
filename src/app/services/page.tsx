@@ -47,22 +47,45 @@ export default function Services() {
           ))}
 
           {/* Cooling Towers */}
-          <div>
-            <h2 className="text-4xl font-bold mb-8 text-blue-800">Cooling Towers</h2>
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div className="space-y-6 text-lg">
-                <h3 className="text-3xl font-semibold">🔧 Installation & Commissioning</h3>
-                <h3 className="text-3xl font-semibold">❌ Maintenance & Servicing</h3>
-                <ul className="space-y-2 list-disc ml-6 text-2xl">
-                  <li>Inspection & Cleaning</li>
-                  <li>Performance Optimisation</li>
-                  <li>Repair & Replacement</li>
-                  <li>Water treatment during operation</li>
-                </ul>
-              </div>
-              <Image src="/assets/coolingtowers.png" alt="Cooling Tower" width={500} height={300} className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 w-full object-contain" />
-            </div>
-          </div>
+          <div className="mb-16">
+  <h2 className="text-3xl font-bold text-brand-blue mb-8">Cooling Towers</h2>
+
+  <div className="flex flex-col md:flex-row gap-10">
+    {/* النص */}
+    <div className="flex-1 space-y-6 text-lg text-gray-700 leading-relaxed">
+      <div>
+        <h3 className="font-semibold text-xl flex items-center mb-2">
+          🔧 <span className="ml-2">Installation & Commissioning</span>
+        </h3>
+        <p className="ml-7 text-base text-gray-600">Professional installation ensuring optimal performance from day one.</p>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-xl flex items-center mb-2">
+          🛠️ <span className="ml-2">Maintenance & Servicing</span>
+        </h3>
+        <ul className="list-disc ml-10 space-y-2 text-base text-gray-600">
+          <li>Inspection & Cleaning</li>
+          <li>Performance Optimization</li>
+          <li>Repair & Replacement</li>
+          <li>Water treatment during operation</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* الصورة */}
+    <div className="flex-1">
+      <Image
+        src="/assets/coolingtowers.png"
+        alt="Cooling Tower"
+        width={500}
+        height={350}
+        className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+  </div>
+</div>
+
 
           {/* Sand Filters */}
           <div>
