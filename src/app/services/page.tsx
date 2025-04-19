@@ -79,8 +79,8 @@ export default function Services() {
         src="/assets/coolingtowers.png"
         alt="Cooling Tower"
         width={500}
-        height={400}
-        className="rounded-xl shadow-md w-full h-[400px] object-cover transition-transform duration-300 hover:scale-105"
+        height={500}
+        className="rounded-xl shadow-md w-full h-[500px] object-cover transition-transform duration-300 hover:scale-105"
       />
     </div>
   </div>
