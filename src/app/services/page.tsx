@@ -48,7 +48,7 @@ export default function Services() {
 
           {/* Cooling Towers */}
           <div className="mb-16">
-  <h2 className="text-3xl font-bold text-brand-blue mb-8">Cooling Towers</h2>
+  <h2 className="text-3xl font-bold text-blue-800 mb-16">Cooling Towers</h2>
 
   <div className="flex flex-col md:flex-row gap-10">
     {/* النص */}
