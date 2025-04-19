@@ -22,7 +22,7 @@ export default function Services() {
   return (
     <>
       <Header />
-      <main className="pt-24">
+      <main className="pt-16">
         <section className="max-w-7xl mx-auto px-6 py-16 space-y-20 fade-in">
           {/* Title */}
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Our Services</h1>
@@ -171,7 +171,7 @@ export default function Services() {
         alt="Chemicals"
         width={500}
         height={150}
-        className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
+        className="rounded-xl shadow-md w-full h-[150px] object-cover transition-transform duration-300 hover:scale-105"
       />
     </div>
   </div>
