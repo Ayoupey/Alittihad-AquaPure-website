@@ -89,7 +89,7 @@ export default function Services() {
                 </ul>
                 <div className="mt-4">
                   <h3 className="text-3xl font-semibold">🧪 Quality Assurance</h3>
-                  <p>Our programs undergo strict lab testing to ensure effectiveness.</p>
+                  <p className="text-2xl">Our programs undergo strict lab testing to ensure effectiveness.</p>
                 </div>
               </div>
               <Image src="/assets/services3.png" alt="Chemicals" width={500} height={300} className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 w-full object-contain" />
