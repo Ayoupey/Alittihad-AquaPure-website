@@ -170,8 +170,8 @@ export default function Services() {
         src="/assets/services3.png"
         alt="Chemicals"
         width={500}
-        height={150}
-        className="rounded-xl shadow-md w-full h-[150px] object-cover transition-transform duration-300 hover:scale-105"
+        height={300}
+        className="rounded-xl shadow-md w-full h-[300px] object-cover transition-transform duration-300 hover:scale-105"
       />
     </div>
   </div>
