@@ -158,7 +158,7 @@ export default function Services() {
         <h3 className="font-semibold text-3xl flex items-center mb-2">
           🧪 <span className="ml-2">Quality & Expertise</span>
         </h3>
-        <p className="ml-7 text-base text-gray-600 text-2xl">
+        <p className="ml-7 text-gray-600 text-2xl">
           Our programs undergo strict lab testing to ensure maximum effectiveness and safety.
         </p>
       </div>
@@ -170,7 +170,7 @@ export default function Services() {
         src="/assets/services3.png"
         alt="Chemicals"
         width={500}
-        height={350}
+        height={250}
         className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
       />
     </div>
