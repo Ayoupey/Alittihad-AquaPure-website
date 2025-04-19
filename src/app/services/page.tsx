@@ -30,7 +30,7 @@ export default function Services() {
           {/* Section with Text + 2 Images Underneath */}
           {mainSections.map((section, i) => (
             <div key={i} className="space-y-6 text-center">
-              <p className="text-3xl text-gray-800 max-w-4xl text-left pl-4">
+              <p className="text-3xl text-gray-800 max-w-3xl text-left pl-4">{section.text}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {section.imgs.map((src, j) => (
                   <Image
