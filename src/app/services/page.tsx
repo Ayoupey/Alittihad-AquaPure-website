@@ -88,24 +88,50 @@ export default function Services() {
 
 
           {/* Sand Filters */}
-          <div>
-            <h2 className="text-4xl font-bold mb-8 text-blue-800">Pressurized Sand Filters</h2>
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div className="space-y-2 text-2xl">
-                {["High Filtration Efficiency", "Durable Construction", "Automatic & manual backwashing", "Customisable Designs", "Energy Efficient"].map((point, i) => (
-                  <p key={i} className="flex items-center"><span className="text-green-600 mr-2">✓</span>{point}</p>
-                ))}
-                <h3 className="text-3xl font-semibold mt-6">📋 Applications</h3>
-                <ul className="list-disc ml-6 space-y-1 text-2xl">
-                  <li>Industrial Process Water Treatment</li>
-                  <li>Cooling Tower Water Filtration</li>
-                  <li>Pretreatment for Reverse Osmosis (RO)</li>
-                  <li>Wastewater Recycling & Reuse</li>
-                </ul>
-              </div>
-              <Image src="/assets/pressurizedsandfilters.png" alt="Sand Filters" width={500} height={300} className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 w-full object-contain" />
-            </div>
-          </div>
+           <div className="mb-16">
+  <h2 className="text-3xl font-bold text-blue-800 mb-16">Pressurized Sand Filters</h2>
+
+  <div className="flex flex-col md:flex-row gap-10">
+    {/* النص */}
+    <div className="flex-1 space-y-24 text-2xl text-gray-700 leading-relaxed">
+      <div>
+        <h3 className="font-semibold text-3xl flex items-center mb-2">
+          ✨ <span className="ml-2">Features</span>
+        </h3>
+        <ul className="list-disc ml-10 space-y-2 text-gray-600 text-2xl">
+          <li>High Filtration Efficiency</li>
+          <li>Durable Construction</li>
+          <li>Automatic & manual backwashing</li>
+          <li>Customisable Designs</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-3xl flex items-center mb-2">
+          📋 <span className="ml-2">Applications
+        </h3>
+        <ul className="list-disc ml-10 space-y-2 text-gray-600 text-2xl">
+          <li>Industrial Process Water Treatment</li>
+          <li>Cooling Tower Water Filtration</li>
+          <li>Pretreatment for Reverse Osmosis</li>
+          <li>Wastewater Recycling & Reuse</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* الصورة */}
+    <div className="flex-1">
+      <Image
+        src="/assets/coolingtowers.png"
+        alt="Cooling Tower"
+        width={500}
+        height={350}
+        className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+  </div>
+</div>
+
 
           {/* Chemicals */}
           <div>
