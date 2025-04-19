@@ -44,7 +44,7 @@ export default function Home() {
             {
               title: "Cooling Towers",
               desc: "Custom tower designs to your specific cooling needs, optimizing energy consumption and performance",
-              img: "/assets/coolingtowers.png",
+              img: "/assets/coolingtowers2.png",
             },
             {
               title: "Pressurized Sand Filters",
