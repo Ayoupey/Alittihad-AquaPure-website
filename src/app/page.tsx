@@ -96,16 +96,16 @@ export default function Home() {
       <div>
         <ul className="space-y-6 text-gray-800 text-lg">
           <li className="flex items-start">
-            <span className="mr-2 text-xl">•</span>
-            First Egyptian company to design a floating system...
+            <span className="mr-2 text-2xl">•</span>
+            First Egyptian company to design a floating system for submersible pumps operating in oil removal basins in iron & steel factories.
           </li>
           <li className="flex items-start">
-            <span className="mr-2 text-xl">•</span>
-            Innovative design of a system capable of...
+            <span className="mr-2 text-2xl">•</span>
+            Innovative design of a system capable of supporting up to 40 kg on water surface
           </li>
           <li className="flex items-start">
-            <span className="mr-2 text-xl">•</span>
-            Execution of multiple projects...
+            <span className="mr-2 text-2xl">•</span>
+            Execution of multiple projects with high-quality standards and record completion times
           </li>
         </ul>
       </div>
