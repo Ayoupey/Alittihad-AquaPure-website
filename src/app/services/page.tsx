@@ -122,8 +122,8 @@ export default function Services() {
     {/* الصورة */}
     <div className="flex-1">
       <Image
-        src="/assets/coolingtowers.png"
-        alt="Cooling Tower"
+        src="/assets/pressurizedsandfilters.png"
+        alt="sandfilter"
         width={500}
         height={350}
         className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
