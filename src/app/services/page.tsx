@@ -134,26 +134,49 @@ export default function Services() {
 
 
           {/* Chemicals */}
-          <div>
-            <h2 className="text-4xl font-bold mb-8 text-blue-800">Chemicals</h2>
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div className="space-y-4 text-lg">
-                <h3 className="text-3xl font-semibold">✏️ Treatment Programs for:</h3>
-                <ul className="list-disc ml-6 space-y-1 text-2xl">
-                  <li>Boilers</li>
-                  <li>Cooling towers</li>
-                  <li>Demineralization units</li>
-                  <li>Sewage WWT units</li>
-                  <li>Industrial WWT units</li>
-                </ul>
-                <div className="mt-4">
-                  <h3 className="text-3xl font-semibold">🧪 Quality Assurance</h3>
-                  <p className="text-2xl">Our programs undergo strict lab testing to ensure effectiveness.</p>
-                </div>
-              </div>
-              <Image src="/assets/services3.png" alt="Chemicals" width={500} height={300} className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 w-full object-contain" />
-            </div>
-          </div>
+          {/* Chemicals Section */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-blue-800 mb-12">Chemicals</h2>
+
+  <div className="flex flex-col md:flex-row gap-10">
+    {/* النص */}
+    <div className="flex-1 space-y-16 text-2xl text-gray-700 leading-relaxed">
+      <div>
+        <h3 className="font-semibold text-3xl flex items-center mb-2">
+          ✏️ <span className="ml-2">Treatment Programs for:</span>
+        </h3>
+        <ul className="list-disc ml-10 space-y-2 text-gray-600 text-2xl">
+          <li>Boilers</li>
+          <li>Cooling Towers</li>
+          <li>Demineralization Units</li>
+          <li>Sewage WWT Units</li>
+          <li>Industrial WWT Units</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-3xl flex items-center mb-2">
+          🧪 <span className="ml-2">Quality & Expertise</span>
+        </h3>
+        <p className="ml-7 text-base text-gray-600 text-2xl">
+          Our programs undergo strict lab testing to ensure maximum effectiveness and safety.
+        </p>
+      </div>
+    </div>
+
+    {/* الصورة */}
+    <div className="flex-1">
+      <Image
+        src="/assets/services3.png"
+        alt="Chemicals"
+        width={500}
+        height={350}
+        className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+  </div>
+</div>
+
         </section>
       </main>
       <Footer />
