@@ -33,21 +33,19 @@ export default function Services() {
       <p className="text-xl text-gray-800 max-w-3xl mx-auto">{section.text}</p>
 
       {/* الصورتين */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
-        {section.imgs.map((src, j) => (
-          <Image
-            key={j}
-            src={src}
-            alt={`service-img-${i}-${j}`}
-            width={400}
-            height={250}
-            className="rounded-lg shadow-md mx-auto transform transition duration-300 hover:scale-105"
-          />
-        ))}
-      </div>
-    </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+  {section.imgs.map((src, j) => (
+    <Image
+      key={j}
+      src={src}
+      alt={`service-img-${i}-${j}`}
+      width={500}
+      height={350}
+      className="w-full h-[250px] sm:h-[300px] object-cover rounded-lg shadow-md mx-auto transform transition duration-300 hover:scale-105"
+    />
   ))}
 </div>
+
 
           {/* Cooling Towers */}
           <div>
