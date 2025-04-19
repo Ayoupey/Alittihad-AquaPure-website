@@ -108,7 +108,7 @@ export default function Services() {
 
       <div>
         <h3 className="font-semibold text-3xl flex items-center mb-2">
-          📋 <span className="ml-2">Applications
+          📋 <span className="ml-2">Applications</span>
         </h3>
         <ul className="list-disc ml-10 space-y-2 text-gray-600 text-2xl">
           <li>Industrial Process Water Treatment</li>
