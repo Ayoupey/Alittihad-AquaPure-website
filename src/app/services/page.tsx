@@ -52,16 +52,16 @@ export default function Services() {
 
   <div className="flex flex-col md:flex-row gap-10">
     {/* النص */}
-    <div className="flex-1 space-y-6 text-lg text-gray-700 leading-relaxed">
+    <div className="flex-1 space-y-6 text-2xl text-gray-700 leading-relaxed">
       <div>
-        <h3 className="font-semibold text-xl flex items-center mb-2">
+        <h3 className="font-semibold text-3xl flex items-center mb-2">
           🔧 <span className="ml-2">Installation & Commissioning</span>
         </h3>
         <p className="ml-7 text-base text-gray-600">Professional installation ensuring optimal performance from day one.</p>
       </div>
 
       <div>
-        <h3 className="font-semibold text-xl flex items-center mb-2">
+        <h3 className="font-semibold text-3xl flex items-center mb-2">
           🛠️ <span className="ml-2">Maintenance & Servicing</span>
         </h3>
         <ul className="list-disc ml-10 space-y-2 text-base text-gray-600">
