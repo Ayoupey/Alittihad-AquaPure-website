@@ -12,29 +12,42 @@ export default function Services() {
           {/* Title */}
           <h1 className="text-4xl font-bold text-gray-900">Our Services</h1>
 
-          {/* Services Blocks */}
-          {[{
-            text: "Designing and implementing sewage and industrial wastewater treatment plants, firefighting systems, improving and maintaining current water systems.",
-            img: "/assets/services1.png",
-            alt: "Wastewater Treatment"
-          }, {
-            text: "Installation and maintenance of sewage lifting stations",
-            img: "/assets/services2.png",
-            alt: "Sewage Lifting Stations"
-          }, {
-            text: "Providing customized solutions for heavy industries",
-            img: "/assets/services4.png",
-            alt: "Heavy Industries Solutions"
-          }].map((item, index) => (
-            <div key={index} className={`grid md:grid-cols-2 gap-10 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-              <div>
-                <p className="text-3xl leading-relaxed text-gray-700">{item.text}</p>
-              </div>
-              <div>
-                <Image src={item.img} alt={item.alt} width={500} height={300} className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 w-full object-contain" />
-              </div>
-            </div>
-          ))}
+          {/* Main Services List */}
+<div className="space-y-16 mb-20">
+  {[
+    {
+      text: "Designing and implementing sewage and industrial wastewater treatment plants, firefighting systems, improving and maintaining current water systems.",
+      imgs: ["/assets/services1.png", "/assets/services1b.jpg"],
+    },
+    {
+      text: "Installation and maintenance of sewage lifting stations",
+      imgs: ["/assets/services2.png", "/assets/services2b.jpg"],
+    },
+    {
+      text: "Providing customized solutions for heavy industries",
+      imgs: ["/assets/services4.png", "/assets/services4b.jpg"],
+    },
+  ].map((section, i) => (
+    <div key={i} className="text-center space-y-6">
+      {/* النص */}
+      <p className="text-xl text-gray-800 max-w-3xl mx-auto">{section.text}</p>
+
+      {/* الصورتين */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        {section.imgs.map((src, j) => (
+          <Image
+            key={j}
+            src={src}
+            alt={`service-img-${i}-${j}`}
+            width={400}
+            height={250}
+            className="rounded-lg shadow-md mx-auto transform transition duration-300 hover:scale-105"
+          />
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
 
           {/* Cooling Towers */}
           <div>
