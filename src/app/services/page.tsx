@@ -22,7 +22,7 @@ export default function Services() {
   return (
     <>
       <Header />
-      <main className="pt-32">
+      <main className="pt-24">
         <section className="max-w-7xl mx-auto px-6 py-16 space-y-20 fade-in">
           {/* Title */}
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Our Services</h1>
@@ -170,7 +170,7 @@ export default function Services() {
         src="/assets/services3.png"
         alt="Chemicals"
         width={500}
-        height={250}
+        height={150}
         className="rounded-xl shadow-md w-full object-cover transition-transform duration-300 hover:scale-105"
       />
     </div>
