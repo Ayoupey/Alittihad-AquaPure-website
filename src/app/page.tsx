@@ -94,17 +94,17 @@ export default function Home() {
     <div className="grid md:grid-cols-2 gap-12 items-center">
       {/* Text on the left */}
       <div>
-        <ul className="space-y-6 text-gray-800 text-lg">
+        <ul className="space-y-6 text-gray-800 text-xl">
           <li className="flex items-start">
-            <span className="mr-2 text-3xl">•</span>
+            <span className="mr-2 text-2xl">•</span>
             First Egyptian company to design a floating system for submersible pumps operating in oil removal basins in iron & steel factories.
           </li>
           <li className="flex items-start">
-            <span className="mr-2 text-3xl">•</span>
+            <span className="mr-2 text-2xl">•</span>
             Innovative design of a system capable of supporting up to 40 kg on water surface
           </li>
           <li className="flex items-start">
-            <span className="mr-2 text-3xl">•</span>
+            <span className="mr-2 text-2xl">•</span>
             Execution of multiple projects with high-quality standards and record completion times
           </li>
         </ul>
@@ -157,19 +157,23 @@ export default function Home() {
       </section>
 
       {/* Partners Section */}
-<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
-  {[...Array(10)].map((_, i) => (
-    <Image
-      key={i}
-      src={`/assets/partner${i + 1}.png`}
-      alt={`Partner ${i + 1}`}
-      width={100}
-      height={50}
-      className="h-12 object-contain mx-auto transform transition duration-300 hover:scale-150"
-    />
-  ))}
-</div>
-      </section>
+<section className="bg-gray-50 px-6 py-20">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-3xl font-bold mb-12 text-gray-900">Our Partners</h2>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
+      {[...Array(10)].map((_, i) => (
+        <Image
+          key={i}
+          src={`/assets/partner${i + 1}.png`}
+          alt={`Partner ${i + 1}`}
+          width={100}
+          height={50}
+          className="h-12 object-contain mx-auto transform transition duration-300 hover:scale-150"
+        />
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* 👇 Footer مكانه الصحيح */}
       <Footer />
