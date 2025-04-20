@@ -94,7 +94,7 @@ export default function Home() {
     <div className="grid md:grid-cols-2 gap-12 items-center">
       {/* Text on the left */}
       <div>
-        <ul className="space-y-6 text-gray-800 text-2xl">
+        <ul className="space-y-6 text-gray-800 text-3xl">
           <li className="flex items-start">
             <span className="mr-2 text-2xl">•</span>
             First Egyptian company to design a floating system for submersible pumps operating in oil removal basins in iron & steel factories.
