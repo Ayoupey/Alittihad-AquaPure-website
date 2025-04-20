@@ -91,7 +91,7 @@ export default function Home() {
   <div className="max-w-7xl mx-auto">
     <h2 className="text-4xl font-bold mb-12 text-gray-900">Notable Achievements</h2>
 
-    <div className="grid md:grid-cols-2 gap-12">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
       {/* Text on the left */}
       <div>
         <ul className="space-y-6 text-gray-800 text-2xl">
