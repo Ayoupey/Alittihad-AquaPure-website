@@ -89,7 +89,7 @@ export default function Home() {
       {/* Achievements Section */}
       <section className="bg-gray-50 py-16 px-6">
   <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold mb-12 text-gray-900">Notable Achievements</h2>
+    <h2 className="text-4xl font-bold mb-12 text-gray-900">🏆 Notable Achievements</h2>
 
     <div className="grid md:grid-cols-2 gap-12 items-center">
       {/* Text on the left */}
@@ -126,10 +126,10 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold mb-8 flex items-center gap-3 text-gray-900">
+        <h2 className="text-4xl font-bold mb-8 flex items-center gap-3 text-gray-900">
           <span className="text-4xl">👥</span> Why Choose Us?
         </h2>
-        <p className="mb-12 text-lg text-gray-700">
+        <p className="mb-12 text-2xl text-gray-700">
           At Al-Ittihad Aquapure, we ensure safe services that guarantee secure
           implementation, with swift performance and accurate results to meet all
           your needs.
