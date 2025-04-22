@@ -20,10 +20,13 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="space-y-2 text-sm md:text-base">
-          <p><strong>📍 Address:</strong> 123 Water Treatment Street, Cairo, Egypt</p>
+          <p><strong>📍 Address:</strong> El-Raml Station, Alexandria, Egypt.</p>
           <p><strong>📞 Phone:</strong> +20-110-105-2354</p>
+          <p><strong>📞 Phone:</strong> +20 100 405 4221</p>
           <p><strong>☎️ Landline:</strong> 03-4807666</p>
-          <p><strong>✉️ Email:</strong> info@alittihadaquapure.com</p>
+          <p><strong>✉️ Email:</strong> info@aquapure-eg.net</p>
+          <p><strong>✉️ Email:</strong> sales@aquapure-eg.net</p>
+          <p><strong>✉️ Email:</strong> technical-office@aquapure-eg.net</p>
         </div>
       </div>
     </footer>
