@@ -29,8 +29,8 @@ export default function Footer() {
         {/* Column 3: Emails */}
         <div className="space-y-3">
           <p><strong>✉️ Email:</strong> info@aquapure-eg.net</p>
-          <p><strong>✉️ Email:</strong> sales@aquapure-eg.net</p>
           <p><strong>✉️ Email:</strong> technical-office@aquapure-eg.net</p>
+          <p><strong>✉️ Email:</strong> sales@aquapure-eg.net</p>
         </div>
       </div>
     </footer>
